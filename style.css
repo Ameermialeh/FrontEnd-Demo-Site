@@ -1,0 +1,127 @@
+:root {
+    --gold-primary: #B8860B;
+    --gold-light: #D4A84B;
+    --gold-dark: #8B6914;
+    --gold-accent: #C9A227;
+    --bg-dark: #0F0E0C;
+    --bg-card: #1A1815;
+    --bg-card-hover: #252119;
+    --text-primary: #F5F0E8;
+    --text-secondary: #A69F94;
+    --text-muted: #6B6560;
+    --border-color: #2A2622;
+    --success: #4A7C59;
+    --danger: #8B3A3A;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn{
+    font-family: 'Libre Franklin', sans-serif;
+    padding: 14px 32px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* Header */
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 20px 0;
+    background-color: var(--bg-dark);
+}
+
+.header .container{
+    display: flex;
+    max-width: 1280px;
+    padding: 0 24px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+/* LOGO */
+.header .container .logo{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--gold-light);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.header .container .logo span{
+    color: var(--text-primary);
+    font-weight: 400;
+}
+/* Links */
+.header .container .links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0 15px;
+    display: flex;
+    gap: 40px;
+}
+
+.header .container .links li a{
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 8px 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 0.4s ease;
+}
+.header .container .links li a:hover, .header .container .links li a.active{
+    color: var(--gold-light);
+}
+
+/* Nav Button Styles */
+.header .container .btn-sell-buy{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .container .btn-sell-buy .btn-sell{
+    border: 1px solid var(--gold-primary);
+    color: var(--gold-light);
+}
+
+.header .container .btn-sell-buy .btn-buy{
+    background-color: var(--gold-primary);
+    color: var(--bg-dark);
+    border: 1px solid var(--gold-light);
+}
+.header .container .btn-sell-buy .btn-sell:hover{
+  background-color: var(--gold-primary);
+  color: black;
+}
+.header .container .btn-sell-buy .btn-buy:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px #b8860b4d;
+}
+
+/* Hero Section */
+

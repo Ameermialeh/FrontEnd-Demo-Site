@@ -61,7 +61,7 @@ a{
     justify-content: space-between;
 }
 /* LOGO */
-.header .container .logo{
+.logo{
     font-family: 'Cormorant Garamond', serif;
     font-size: 28px;
     font-weight: 600;
@@ -70,12 +70,12 @@ a{
     text-transform: uppercase;
 }
 
-.header .container .logo span{
+.logo span{
     color: var(--text-primary);
     font-weight: 400;
 }
 /* Links */
-.header .container .links{
+.links{
     display: flex;
     list-style: none;
     align-items: center;
@@ -84,7 +84,7 @@ a{
     gap: 40px;
 }
 
-.header .container .links li a{
+.links li a{
     color: var(--text-secondary);
     font-size: 13px;
     font-weight: 400;
@@ -93,35 +93,59 @@ a{
     text-transform: uppercase;
     transition: color 0.4s ease;
 }
-.header .container .links li a:hover, .header .container .links li a.active{
+.links li a:hover, .links li a.active{
     color: var(--gold-light);
 }
 
 /* Nav Button Styles */
-.header .container .btn-sell-buy{
+.btn-sell-buy{
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.header .container .btn-sell-buy .btn-sell{
+.btn-sell-buy .btn-sell{
     border: 1px solid var(--gold-primary);
     color: var(--gold-light);
 }
 
-.header .container .btn-sell-buy .btn-buy{
+.btn-sell-buy .btn-buy{
     background-color: var(--gold-primary);
     color: var(--bg-dark);
     border: 1px solid var(--gold-light);
 }
-.header .container .btn-sell-buy .btn-sell:hover{
+.btn-sell-buy .btn-sell:hover{
   background-color: var(--gold-primary);
   color: black;
 }
-.header .container .btn-sell-buy .btn-buy:hover{
+.btn-sell-buy .btn-buy:hover{
     transform: translateY(-2px);
     box-shadow: 0 10px 20px #b8860b4d;
 }
 
+.menu-btn{
+    display: none;
+    font-size: 24px;
+    border: 1px solid var(--border-color);
+    color: var(--gold-light);
+    background-color: transparent;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+.menu-btn:hover{
+    border: .5px solid var(--gold-light);
+}
+@media screen and (max-width: 940px) {
+    .header .container .links{
+        display: none;
+    }
+    .header .container .btn-sell-buy{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+    
+}
 /* Hero Section */
 

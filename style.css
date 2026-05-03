@@ -33,6 +33,13 @@ a{
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
 .btn{
     font-family: 'Libre Franklin', sans-serif;
     padding: 14px 32px;
@@ -110,7 +117,7 @@ a{
 }
 
 .btn-sell-buy .btn-buy{
-    background-color: var(--gold-primary);
+    background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
     color: var(--bg-dark);
     border: 1px solid var(--gold-light);
 }
@@ -148,4 +155,106 @@ a{
     
 }
 /* Hero Section */
+/* Left */
+.hero{
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    padding: 0 24px;
+    margin: 50px auto 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+.hero-left{
+    position: relative;
+}
+.hero-market-status{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    margin-bottom: 32px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: var(--success);
+    border-radius: 50%;
+    margin-right: 8px;
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
 
+.hero-header{
+    font-size: clamp(48px, 6vw, 80px);
+    color: var(--text-primary);
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+.gold{
+    color: var(--gold-light);
+    font-style: italic;
+}
+.hero-description{
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 480px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+.hero-btn{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 60px;
+}
+.btn-explore{
+    background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+    color: var(--bg-dark);
+    border: 1px solid var(--gold-light);
+}
+.btn-explore:hover {
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-primary) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(184, 134, 11, 0.3);
+}
+
+.btn-getfree {
+    background: transparent;
+    border: 1px solid var(--gold-primary);
+    color: var(--gold-light);
+}
+.btn-getfree:hover {
+    background: var(--gold-primary);
+    color: var(--bg-dark);
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-color);
+}
+.stat-item {
+    text-align: left;
+}
+.stat-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    color: var(--gold-light);
+    margin-bottom: 4px;
+}
+.stat-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+/* Right */
